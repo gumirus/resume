@@ -6,69 +6,84 @@
         <meta name="vieport" content="width=device-width,initial-scale=1.0" />
         <meta name="keywords" content="Ruslan Gumirov, resume, cv" >
         <meta name="description" content="Это сайт - резюме Руслана Гумирова" >
+        <link rel="stylesheet" href="styles.css">
         <title>Ruslan Gumirov's resume</title>
     </head>
-    <body>
-        <img src="https://static.1tv.ru/uploads/photo/image/2/huge/4062_huge_876c41f50e.jpg" alt="Гумиров Руслан" width="300">
+<body>
+<div class="container">
+    <div>
+        <img src="https://static.1tv.ru/uploads/photo/image/2/huge/4062_huge_876c41f50e.jpg" alt="Гумиров Руслан" class="avatar">
         <h1>Руслан Гумиров</h1>
-        <p><h2>Я учусь на программиста, хочу устроиться <strong>джуниором и практиковаться.</strong></h2></p>
-        <p><h3><strong><em>Я люблю заниматься спортом и программировать</em></strong></h3></p>
+        <div class="info-text">
+        <p><h2>Я учусь на FrontEnd-разработчика, хочу устроиться <strong>джуниором и практиковаться.</strong></h2></p>
+        <p><h3><strong><em>Люблю заниматься спортом и программировать.</em></strong></h3></p>
+    </div>
         <h4>Список социальных сетей:</h4>
-        <a href="https://t.me/Ruslan_Rascheed" target="_blank">Telegram</a>
+    <div class="">
+        <a href="https://t.me/Ruslan_Rascheed" target="_blank"class="bg-blue">Telegram</a>
 
-        <a href="https://www.youtube.com/channel/UC9zhAKWPPYQqqJIzfJXgAYg" target="_blank">Youtube</a>
+        <a href="https://www.youtube.com/channel/UC9zhAKWPPYQqqJIzfJXgAYg" target="_blank"class="bg-red">Youtube</a>
 
-        <a href="https://vk.com/gumirus" target="_blank">Вконтакте</a>
-        <h2>Мои хобби</h2>
+        <a href="https://vk.com/gumirus" target="_blank"class="bg-white">Вконтакте</a>
+    </div>
+    </div>
+        <h2>Мои хобби:</h2>
+    <div class="card">
         <ol>
             <li>Путешествие</li>
             <li>Блогинг</li>
             <li>Горные лыжи</li>
             <li>Трейдинг</li>
         </ol>
-        <h2>Мои курсы</h2>
+    </div>
+        <h2>Прохождение курсов:</h2>
+    <div class="card-2">
         <table>
             <thead >
                 <tr>
-                <th>Название</td>
-                <th>Должность</td>
-                <th>Год</td>
+                <th>Учёба.</td>
+                <th>Предмет.</td>
+                <th>Год.</td>
             </tr>
             </thead>
             <tbody>
                 <tr>
-                <td>Самоучка</td>
-                <td>Курс: Front end</td>
+                <td>курсы</td>
+                <td class="bg-green">Front-End</td>
                 <td>2022 - Сейчас</td>
             </tr>
             <tr>
-                <td>Самоучка</td>
-                <td>Курс: HTML5 и CSS3</td>
+                <td>курсы</td>
+                <td class="bg-orange">HTML & CSS</td>
+                <td>2022 - Сейчас</td>
+            </tr>
+            <tr>
+                <td>курсы</td>
+                <td class="bg-yellow">JavaScript</td>
                 <td>2022 - Сейчас</td>
             </tr>
             </tbody>
         </table>
-
-        <h2>Связаться со мной</h2>
-        <form action="/">
-            <div>
-                <tabel for="name">Ваше имя</tabel>
+     </div>
+        <form action="/" class="form">
+            <h2>Связаться со мной:</h2>
+        <div class="form-row">
+            <div class="form-group">
+                <tabel for="name">Ваше имя:</tabel>
                 <input type="text" id="name" placeholder="Введите имя">
             </div>
 
-            <div>
-                <tabel for="email">Ваш email</tabel>
+            <div class="form-group">
+                <tabel for="email">Ваш email:</tabel>
                 <input type="email" id="email" placeholder="Введите email">
             </div>
-
-            <div>
-                <label for="message">Ваше сообщение</label>
-                <br>
+        </div>
+            <div class="form-group">
+                <label for="message">Ваше сообщение:</label>
                 <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
             </div>
-
-            <input type="submit" value="Отправить форму">
+            <input class="btn" type="submit" value="Отправить форму">
         </form>
-
-        </body>
+</div>
+</body>
 </html>
